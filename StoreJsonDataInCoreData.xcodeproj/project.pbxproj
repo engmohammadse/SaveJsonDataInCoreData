@@ -11,6 +11,12 @@
 		5264B5CF2C77E549006705EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264B5CE2C77E549006705EE /* ContentView.swift */; };
 		5264B5D12C77E54B006705EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5264B5D02C77E54B006705EE /* Assets.xcassets */; };
 		5264B5D42C77E54B006705EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5264B5D32C77E54B006705EE /* Preview Assets.xcassets */; };
+		5264B5DC2C77E67D006705EE /* JsonToCoreData-Entity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5264B5DA2C77E67D006705EE /* JsonToCoreData-Entity.xcdatamodeld */; };
+		5264B5DF2C77E764006705EE /* QuestionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264B5DE2C77E764006705EE /* QuestionDataModel.swift */; };
+		5264B5E12C77E826006705EE /* JsonToCoreData-Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264B5E02C77E826006705EE /* JsonToCoreData-Logic.swift */; };
+		5264B5E32C77E855006705EE /* qvisitor_db.questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 5264B5E22C77E855006705EE /* qvisitor_db.questions.json */; };
+		5264B5E72C77F156006705EE /* QuestionClassManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264B5E62C77F156006705EE /* QuestionClassManual.swift */; };
+		5264B5E92C77F840006705EE /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264B5E82C77F840006705EE /* QuestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		5264B5CE2C77E549006705EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5264B5D02C77E54B006705EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5264B5D32C77E54B006705EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5264B5DB2C77E67D006705EE /* JsonToCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JsonToCoreData.xcdatamodel; sourceTree = "<group>"; };
+		5264B5DE2C77E764006705EE /* QuestionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataModel.swift; sourceTree = "<group>"; };
+		5264B5E02C77E826006705EE /* JsonToCoreData-Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JsonToCoreData-Logic.swift"; sourceTree = "<group>"; };
+		5264B5E22C77E855006705EE /* qvisitor_db.questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qvisitor_db.questions.json; sourceTree = "<group>"; };
+		5264B5E62C77F156006705EE /* QuestionClassManual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionClassManual.swift; sourceTree = "<group>"; };
+		5264B5E82C77F840006705EE /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		5264B5CB2C77E549006705EE /* StoreJsonDataInCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				5264B5EA2C77F84D006705EE /* View */,
+				5264B5DD2C77E6EB006705EE /* CoreDataFolder */,
 				5264B5CC2C77E549006705EE /* StoreJsonDataInCoreDataApp.swift */,
-				5264B5CE2C77E549006705EE /* ContentView.swift */,
+				5264B5E22C77E855006705EE /* qvisitor_db.questions.json */,
 				5264B5D02C77E54B006705EE /* Assets.xcassets */,
 				5264B5D22C77E54B006705EE /* Preview Content */,
 			);
@@ -65,6 +79,26 @@
 				5264B5D32C77E54B006705EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5264B5DD2C77E6EB006705EE /* CoreDataFolder */ = {
+			isa = PBXGroup;
+			children = (
+				5264B5DA2C77E67D006705EE /* JsonToCoreData-Entity.xcdatamodeld */,
+				5264B5DE2C77E764006705EE /* QuestionDataModel.swift */,
+				5264B5E02C77E826006705EE /* JsonToCoreData-Logic.swift */,
+				5264B5E62C77F156006705EE /* QuestionClassManual.swift */,
+			);
+			path = CoreDataFolder;
+			sourceTree = "<group>";
+		};
+		5264B5EA2C77F84D006705EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5264B5E82C77F840006705EE /* QuestionView.swift */,
+				5264B5CE2C77E549006705EE /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5264B5E32C77E855006705EE /* qvisitor_db.questions.json in Resources */,
 				5264B5D42C77E54B006705EE /* Preview Assets.xcassets in Resources */,
 				5264B5D12C77E54B006705EE /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5264B5E12C77E826006705EE /* JsonToCoreData-Logic.swift in Sources */,
 				5264B5CF2C77E549006705EE /* ContentView.swift in Sources */,
+				5264B5DF2C77E764006705EE /* QuestionDataModel.swift in Sources */,
+				5264B5E92C77F840006705EE /* QuestionView.swift in Sources */,
+				5264B5DC2C77E67D006705EE /* JsonToCoreData-Entity.xcdatamodeld in Sources */,
+				5264B5E72C77F156006705EE /* QuestionClassManual.swift in Sources */,
 				5264B5CD2C77E549006705EE /* StoreJsonDataInCoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +384,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5264B5DA2C77E67D006705EE /* JsonToCoreData-Entity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5264B5DB2C77E67D006705EE /* JsonToCoreData.xcdatamodel */,
+			);
+			currentVersion = 5264B5DB2C77E67D006705EE /* JsonToCoreData.xcdatamodel */;
+			path = "JsonToCoreData-Entity.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5264B5C12C77E549006705EE /* Project object */;
 }
